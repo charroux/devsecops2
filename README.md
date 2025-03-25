@@ -50,7 +50,9 @@ git push origin --delete newcarservice
 
 ### Docker
 
-Create a Dockerfile in the code folder: https://github.com/charroux/st2scl/blob/main/rentalService/Dockerfile
+Create a Dockerfile in the code folder: https://github.com/charroux/devsecops2/blob/main/Dockerfile
+
+Take care at Java version and also the name of the jar file (obtained with gradlew build).
 
 Build a Docker image:
 ```
