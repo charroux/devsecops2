@@ -56,22 +56,22 @@ Take care at Java version and also the name of the jar file (obtained with gradl
 
 Build a Docker image:
 ```
-docker build -t rentalservice .      
+docker build -t devsecops .      
 ```
 Run the container:
 ```
-docker run -p 4000:8080 rentalservice    
+docker run -p 4000:8080 devsecops    
 ```
 Then check in your browser:
 ```
-http://localhost:4000/cars
+http://localhost:4000/cars/AA11BB
 ```
 
 ### Publish the Docker image to the Docker Hub
 
 Tager l'image :
 ```
-docker tag 4da2332370c7 votreIdDocherHub/rental:1
+docker tag 4da2332370c7 votreIdDocherHub/devsecops:1
 ```
 où le numéro est l'identifiant de l'image donné par docker images, et 1 est un numéro de version
 
@@ -82,7 +82,7 @@ docker login
 
 Publier l'image :
 ```
-docker push votreIdDocherHub/rental:1      
+docker push votreIdDocherHub/devsecops:1      
 ```
 
 
